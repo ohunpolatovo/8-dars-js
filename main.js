@@ -71,20 +71,29 @@
 // join)
 // Input: 'George Raymond Richard Martin'
 // Output: 'GRRM'
-let str='George Raymond Richard Martin'
-let newStr=str.split(" ").map(el=>el[0]).join("")
-console.log(newStr);
+// let str='George Raymond Richard Martin'
+// let newStr=str.split(" ").map(el=>el[0]).join("")
+// console.log(newStr);
 //==========================================================
 // 6. Massivdagi eng yosh va eng qarilarni topib, ularni yoshlarini
 // farqini toping. (sort).
-// Input: [
-// {name: 'John', age: 13},
-// {name: 'Mark', age: 56},
-// {name: 'Rachel', age: 45},
-// {name: 'Nate', age: 67},
-// {name: 'Jeniffer', age: 65}
-// ];
-// Output: 54
+const people = [
+  {name: 'John', age: 13},
+  {name: 'Mark', age: 56},
+  {name: 'Rachel', age: 45},
+  {name: 'Nate', age: 67},
+  {name: 'Jeniffer', age: 65}
+];
+people.sort((a, b) => a.age - b.age);
+const youngest = people[0].age;
+const oldest = people[people.length - 1].age;
+const ageDifference = oldest - youngest;
+
+console.log(`Eng yosh: ${youngest}, Eng qari: ${oldest}`);
+console.log(`Yoshlaridagi farq: ${ageDifference}`); 
+//===================================================================
+
+
 // 7. N ta elementdan iborat massiv berilgan.
 // Massiv elementlari orasidan juftlarini va toqlarini o'z ichiga
 // oladigan massivlar hosil qilinsin. (filter)
