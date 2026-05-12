@@ -14,36 +14,36 @@
 // ];
 // Input: getNamesByGrade(students, 5)
 // Output: ['Quincy', 'Alexis', 'Katie']
-const students = [
-  { name: "Quincy", percent: 96 },
-  { name: "Jason", percent: 84 },
-  { name: "Alexis", percent: 100 },
-  { name: "Sam", percent: 65 },
-  { name: "Katie", percent: 90 },
-  { name: "Anna", percent: 75 },
-];
+// const students = [
+//   { name: "Quincy", percent: 96 },
+//   { name: "Jason", percent: 84 },
+//   { name: "Alexis", percent: 100 },
+//   { name: "Sam", percent: 65 },
+//   { name: "Katie", percent: 90 },
+//   { name: "Anna", percent: 75 },
+// ];
 
-function getNamesByGrade(students, grade) {
-  return students
-    .map(student => {
-      let studentGrade;
-      if (student.percent >= 85 && student.percent <= 100) {
-        studentGrade = 5;
-      } else if (student.percent >= 70 && student.percent < 85) {
-        studentGrade = 4;
-      } else if (student.percent >= 60 && student.percent < 70) {
-        studentGrade = 3;
-      }
+// function getNamesByGrade(students, grade) {
+//   return students
+//     .map(student => {
+//       let studentGrade;
+//       if (student.percent >= 85 && student.percent <= 100) {
+//         studentGrade = 5;
+//       } else if (student.percent >= 70 && student.percent < 85) {
+//         studentGrade = 4;
+//       } else if (student.percent >= 60 && student.percent < 70) {
+//         studentGrade = 3;
+//       }
     
-      return { ...student, grade: studentGrade };
-    })
-    .filter(student => student.grade === grade) 
-    .map(student => student.name); 
-}
+//       return { ...student, grade: studentGrade };
+//     })
+//     .filter(student => student.grade === grade) 
+//     .map(student => student.name); 
+// }
 
-console.log(getNamesByGrade(students, 5)); 
-console.log(getNamesByGrade(students, 4)); 
-
+// console.log(getNamesByGrade(students, 5)); 
+// console.log(getNamesByGrade(students, 4)); 
+//=======================================================================
 // 2. Massivdagi bir xil so’zlar sonini hosil qiluvchi obyekt
 // yarating. (reduce)
 // Input: const animals = ['dog', 'chicken', 'cat', 'dog',
@@ -58,7 +58,10 @@ console.log(getNamesByGrade(students, 4));
 // qiling. (map)
 // Input: [1, 2, 3, 4, 5]
 // Output: [1, 4, 9, 16, 25]
-// Abdulaziz Programmer
+let arr =[1,2,3,4,5]
+let newArr=arr.map(el=>el**2)
+console.log(newArr);
+
 // 4. Massivdagi musbat sonlar yig’indisini hisoblang. (filter va
 // reduce)
 // Input: [ 1, -4, 12, 0, -3, 29, -150]
@@ -194,44 +197,44 @@ console.log(getNamesByGrade(students, 4));
 // name: "Kamron",
 // protcent: 75,
 
-let products = [
-  {
-    id: 6,
-    name: "Smarthpone",
-    price: 12000,
-    rating: 4.5,
-    discount: 20,
-  },
-  {
-    id: 2,
-    name: "Acer",
-    price: 10000,
-    rating: 4.3,
-    discount: 10,
-  },
-  {
-    id: 1,
-    name: "Mac book",
-    price: 17000,
-    rating: 4.7,
-    discount: 40,
-  },
-  {
-    id: 4,
-    name: "HP",
-    price: 21000,
-    rating: 4.1,
-    discount: 30,
-  },
-  {
-    id: 5,
-    name: "Dell",
-    price: 35000,
-    rating: 4.9,
-    discount: 30,
-  },
-];
-let totalPrice = products.reduce((acc, char) => {
-  return acc + char.price;
-}, 0);
-console.log(totalPrice);
+// let products = [
+//   {
+//     id: 6,
+//     name: "Smarthpone",
+//     price: 12000,
+//     rating: 4.5,
+//     discount: 20,
+//   },
+//   {
+//     id: 2,
+//     name: "Acer",
+//     price: 10000,
+//     rating: 4.3,
+//     discount: 10,
+//   },
+//   {
+//     id: 1,
+//     name: "Mac book",
+//     price: 17000,
+//     rating: 4.7,
+//     discount: 40,
+//   },
+//   {
+//     id: 4,
+//     name: "HP",
+//     price: 21000,
+//     rating: 4.1,
+//     discount: 30,
+//   },
+//   {
+//     id: 5,
+//     name: "Dell",
+//     price: 35000,
+//     rating: 4.9,
+//     discount: 30,
+//   },
+// ];
+// let totalPrice = products.reduce((acc, char) => {
+//   return acc + char.price;
+// }, 0);
+// console.log(totalPrice);
