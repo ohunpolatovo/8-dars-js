@@ -77,26 +77,30 @@
 //==========================================================
 // 6. Massivdagi eng yosh va eng qarilarni topib, ularni yoshlarini
 // farqini toping. (sort).
-const people = [
-  {name: 'John', age: 13},
-  {name: 'Mark', age: 56},
-  {name: 'Rachel', age: 45},
-  {name: 'Nate', age: 67},
-  {name: 'Jeniffer', age: 65}
-];
-people.sort((a, b) => a.age - b.age);
-const youngest = people[0].age;
-const oldest = people[people.length - 1].age;
-const ageDifference = oldest - youngest;
+// const people = [
+//   {name: 'John', age: 13},
+//   {name: 'Mark', age: 56},
+//   {name: 'Rachel', age: 45},
+//   {name: 'Nate', age: 67},
+//   {name: 'Jeniffer', age: 65}
+// ];
+// people.sort((a, b) => a.age - b.age);
+// const youngest = people[0].age;
+// const oldest = people[people.length - 1].age;
+// const ageDifference = oldest - youngest;
 
-console.log(`Eng yosh: ${youngest}, Eng qari: ${oldest}`);
-console.log(`Yoshlaridagi farq: ${ageDifference}`); 
+// console.log(`Eng yosh: ${youngest}, Eng qari: ${oldest}`);
+// console.log(`Yoshlaridagi farq: ${ageDifference}`); 
 //===================================================================
-
-
 // 7. N ta elementdan iborat massiv berilgan.
 // Massiv elementlari orasidan juftlarini va toqlarini o'z ichiga
 // oladigan massivlar hosil qilinsin. (filter)
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let evenArr = arr.filter(el => el % 2 === 0);
+// let oddArr = arr.filter(el => el % 2 !== 0);
+// console.log("Juftlar:", evenArr); 
+// console.log("Toqlar:", oddArr);  
+//===================================================================
 // 8. N ta elementdan iborat massiv berilgan. Massiv elementlari
 // orasidan bir xil qiymatga ega bo’lganlarini o’chiruvchi dastur
 // tuzilsin. Faqat birinchi uchragani qoldirilsin. (reduce)
@@ -211,44 +215,4 @@ console.log(`Yoshlaridagi farq: ${ageDifference}`);
 // name: "Kamron",
 // protcent: 75,
 
-// let products = [
-//   {
-//     id: 6,
-//     name: "Smarthpone",
-//     price: 12000,
-//     rating: 4.5,
-//     discount: 20,
-//   },
-//   {
-//     id: 2,
-//     name: "Acer",
-//     price: 10000,
-//     rating: 4.3,
-//     discount: 10,
-//   },
-//   {
-//     id: 1,
-//     name: "Mac book",
-//     price: 17000,
-//     rating: 4.7,
-//     discount: 40,
-//   },
-//   {
-//     id: 4,
-//     name: "HP",
-//     price: 21000,
-//     rating: 4.1,
-//     discount: 30,
-//   },
-//   {
-//     id: 5,
-//     name: "Dell",
-//     price: 35000,
-//     rating: 4.9,
-//     discount: 30,
-//   },
-// ];
-// let totalPrice = products.reduce((acc, char) => {
-//   return acc + char.price;
-// }, 0);
-// console.log(totalPrice);
+
