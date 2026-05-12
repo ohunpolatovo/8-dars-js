@@ -58,18 +58,23 @@
 // qiling. (map)
 // Input: [1, 2, 3, 4, 5]
 // Output: [1, 4, 9, 16, 25]
-let arr =[1,2,3,4,5]
-let newArr=arr.map(el=>el**2)
-console.log(newArr);
-
+// let arr =[1,2,3,4,5]
+// let newArr=arr.map(el=>el**2)
+// console.log(newArr);
+//============================================================
 // 4. Massivdagi musbat sonlar yig’indisini hisoblang. (filter va
 // reduce)
 // Input: [ 1, -4, 12, 0, -3, 29, -150]
 // Output: 42
+//===========================================================
 // 5. Satrdagi so’zlarning bosh harflarini oling. (split, map,
 // join)
 // Input: 'George Raymond Richard Martin'
 // Output: 'GRRM'
+let str='George Raymond Richard Martin'
+let newStr=str.split(" ").map(el=>el[0]).join("")
+console.log(newStr);
+//==========================================================
 // 6. Massivdagi eng yosh va eng qarilarni topib, ularni yoshlarini
 // farqini toping. (sort).
 // Input: [
